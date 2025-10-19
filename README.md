@@ -9,6 +9,15 @@ Removes the post_tag taxonomy from WordPress posts, hiding tags completely in th
 - Lightweight solution (single function)
 - No database modifications required
 
+## How It Works
+
+This snippet uses `unregister_taxonomy_for_object_type()` to completely remove the post_tag taxonomy from posts. This results in:
+
+- Tags menu disappears from WordPress admin sidebar
+- Tags metabox is removed from post editor
+- Tags column is removed from posts list
+- Existing tags remain in database but are not accessible for posts
+
 ## Requirements
 
 - WordPress 5.0 or higher
